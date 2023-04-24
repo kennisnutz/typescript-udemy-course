@@ -1,0 +1,122 @@
+What is typescript?
+Typescript is all about adding a bit of syntaxt to javascript code to handle its type system. The
+goal is to improve the developement work flow by catching potential errors during development.
+
+
+Why use typescript?
+It enables developers identify errors during the development process instead of debugging after deployment
+
+Features and syntaxt:
+
+Basic types:
+What are basic types?
+A type is an easy way to refer to the properties and functions that a value has. A value is anything
+that can be assigned to a variable. Eg of basic types are numbers, strings,boolean, arrays.
+These are primitive types. Any type created by the developer is called an object type. Every value in typescript
+has a type.
+
+Why use basic types?
+1. Typescript uses the types to analize a code.
+2. It allows other engineers to understand what type of data is floating around an application
+making it easier to understand
+
+
+When do we use basic types?
+Basic types are used everywhere. Typescript tries to infere the type of a varaible based on its 
+value.
+
+Type inference and annotations
+Type annotation is a bit of code that tells typescript what type of value that a variable
+refers to. Type inference is the feature of typescript that tries to determine the type of 
+value that a variable refers to.
+
+type annotations are not required when the variable is declared and 
+initialized on the same line to a value with a basic type. Type annotations are not necessary in this
+case since typescript inferes the type from the value of the variable.
+
+The any type is a case in which typescript is unable to infere the type of value to be returned by
+a value
+
+Typescript does not vet the logic of the code.
+
+
+Why are inference and annotations important.
+
+When to use annotations
+1. when a function returns the any type.
+2. when a variable is declared on one line but initialized in another
+3: When we want a variable to have a type that cannot be easily infered
+
+##arrow function
+##named function
+##anonymous functions
+Features:
+1. Typescript can do type inference while extracting values from an array
+2. Typescript can prevent us from adding incompatible values to an array
+3. we can get help with 'map', 'forEach', 'reduce' functions
+4. flexible arrays can still contain multiple defferent types
+
+
+Interfaces:
+This is code written to define a new type. The goal is to define the various property names
+and the various types of value for each property. 
+Any data type can be included in an interface definition. A function can also be add to an 
+interface definition and would include the its arguements and their types as well as the 
+type of its return value.
+
+Interfaces are used to restrict access to functions and ensure that arguements passed to a function
+satisfy the property requirements specified in the interface for the functions
+Syntax: An interface should be used when there are different objects that we need to work together
+
+
+
+Classes:
+A class is a blueprint for creating an object with some fields/values and methods/functons to
+represent a 'thing'
+
+
+
+Modifiers:
+ They are keywords that can be placed in functions or properties in a class to control The
+ access to them. They are 'public' , 'private' and 'protected' 
+ By defualt all attributes are designated as public. A public attribute can be accessed and used 
+ by any one, anywhere and at anytime. A private attribute can only be accessed by methods in its 
+ class. while protected attributes can be accessed by methods in its class as well as child clsses.
+ 
+ Inheritance:
+A class can inherit properties of another class. The inheriting class is known as the child Class
+while the other is known as the parent class. A child class can ovewrite methods inherited from 
+its parent class but cannot change the modifier.
+
+Feilds:
+fields are properties that reference actual values in a class.
+
+Abstract classes:
+An abstract class is a type of class that allows developer to set up contract between 
+different classes. Abstract should be used when there are different objects that have similar
+behaviour or different implementations for certain functions.
+
+1 cannot be used to create an instance of a class directly
+2. Only used as parent class and inherited by other classes
+3. can contain real implementations for some methods
+4. The implemented methods can refer to oother methods that are not yet defined, 
+but names and types have to be provided in the body of the abstract class.
+5. can make child classes Promise to implement none defined functions that operate within the 
+abstract class.
+
+
+Generics:
+They are like function arguements but for types in class or function definition.
+Generics allows us to define the type of a property or an arguement or a return value at a future
+point. This is useful when writting reuseable code, when the data to code is recieving is varying
+
+
+Inheritance and composition
+inheritance is characterized by 'is a' relationship
+Inheritance: abstract class---> child class
+
+composition is characterized by  a 'has a' relationship
+composition: class A has a reference to class B 
+
+in object composition onne object maintians a reference to another object and delegates methods to the referenced object
+when needed
