@@ -120,3 +120,12 @@ composition: class A has a reference to class B
 
 in object composition onne object maintians a reference to another object and delegates methods to the referenced object
 when needed
+
+Decorators:
+A function that can be used to modify/change different properties/methods in an instance of a class
+
+Typescript decorators are different from javascript decorators
+they are used inside classes only
+Decorators in typescript are experimental.
+
+Why are the useful
