@@ -128,4 +128,18 @@ Typescript decorators are different from javascript decorators
 they are used inside classes only
 Decorators in typescript are experimental.
 
-Why are the useful
+
+Typescript with Redux:
+Pros:
+1. Far easier to avoid extremely common typos, like incorrect action types
+2. Gives developer a far better understanding of the types of data floating around the application
+3. Much easier t refactor 
+
+Cons:
+1. Not the bet type definition files
+2. Tons of generic typing required
+3. A lot of imports, as just about everthing (action creator, action, reducer, store, component) 
+   need to be aware of different types
+4. Redux is inherently functional in nature, therefore its a tough to intergrate with 
+   typescript classes
+
