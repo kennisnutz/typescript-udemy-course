@@ -142,4 +142,13 @@ Cons:
    need to be aware of different types
 4. Redux is inherently functional in nature, therefore its a tough to intergrate with 
    typescript classes
+   
+ Anytime a component is created an interface needs to be defined that includes the different properties that the component is going to recieve. 
+ There are 2 ways to set up state in a react class component:
+ 1. defining and interface for the structure of the state, pass the defined interface as a second argument to the generic class annotation tags and then define and initialize the state object inside the components constructor function
+ 
+ 2. simply initialize the state object inside the component.
+ 
+ 
+ 
 
